@@ -290,6 +290,73 @@ img {
 .profile-description a {
     font-weight: bold;
 }
+
+
+
+/*#menu {
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+
+    position: absolute;
+    right: 0;
+    background-color: #fff;
+    
+}*/
+.burger {
+    display: none;
+    position: absolute;
+    top: 40px;
+    width: 30px;
+    /*height: 70px;*/
+    right: 30px;
+    cursor: pointer;
+    /*border: 1px solid red;*/
+
+}
+.burger .line {
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #424242;
+    margin-bottom: 5px;
+}
+#menu_close {
+    z-index: 2;
+    display: none;
+    /*transform: translateX(15px) rotate(-45deg) translateY(-10px);*/
+}
+#menu_close .line {
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #424242;
+    margin-bottom: 0;
+}
+#menu_close .line:nth-child(1) {
+    transform: translateY(4px) rotate(-45deg);
+}
+#menu_close .line:nth-child(2) {
+    transform: rotate(45deg);
+}
+/*#menu_close:before {
+    
+    color: #424242;
+    font-size: 40px;
+    line-height: 25px;
+    text-transform: none;
+    text-align: center;
+    vertical-align: center;
+    position: absolute;
+    content: "+";
+    text-indent: 0;
+    speak: none;
+    left: 0;
+    top: 0;
+    
+ }*/
+
 @media screen and (max-width: 2500px)
 {
     .img-container {
@@ -347,12 +414,68 @@ img {
         grid-template-columns: 1fr;
         grid-gap: 10px;
     }
-
+    .menu-inner {
+        /*display: none;*/
+        visibility: visible; 
+    }
+}
 @media screen and (max-width: 768px)
 {
+    .burger {
+        display: block; 
+    } 
     .menu {
+        width: 100%;
         position: relative;
+        height: auto;
+        margin-left: 0;
+        padding: 0;
+        background-color: #fff;
+        /*border: 1px solid red;*/
 
+    }
+    .menu .menu-title {
+        margin-bottom: 0;
+        padding: 30px;
+    }
+
+    .menu .menu-inner {
+        /*display: none;*/
+        visibility: hidden;
+
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+        padding-top: 50px;
+
+        text-align: center;
+        background-color: #fff;
+
+    }
+    .menu nav {
+        /*display: flex;*/
+        width: 100%;
+        top: 170px;
+        
+        /*height: 600px;*/
+        /*flex-flow: column;*/
+    }
+    ul {
+        margin: 0;
+    }
+    ul>li {
+        font-size: 16px;
+        line-height: 3em;
+        /*flex: 1;*/
+        width: 100%;
+        display: block;
+        
+
+        /*border-top: 1px solid green;*/
     }
     .img-container {
         /*display: block;*/
@@ -409,8 +532,3 @@ img {
         display: none;
     }
 }
-
-
-
-
-

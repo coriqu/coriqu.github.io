@@ -1,14 +1,22 @@
 const myPhotos = {
 
 }
-// let navBar = {
-//     init: function() {
-//         $.delegate($(".menu")[0], "a", "click", function(e) {
-//             let a = e.target;
-//             addClass(a, "active")
-//         });
-//     }
-// }
+let navBar = {
+    init: function() {
+        $.delegate($("#menu_open")[0], "div", "click", function(e) {
+            console.log('click on the menu')
+            // $('.menu-inner')[0].style.display  = 'block';
+            $('.menu-inner')[0].style.visibility  = 'visible'; 
+            $('#menu_close')[0].style.display  = 'block';
+        });
+        $.delegate($("#menu_close")[0], "div", "click", function(e) {
+            console.log('click on the menu')
+            // $('.menu-inner')[0].style.display  = 'none';
+            $('.menu-inner')[0].style.visibility  = 'hidden'; 
+            $('#menu_close')[0].style.display  = 'none';
+        });
+    }
+}
 let PhotoAlbum = {
 
     init: function() {
@@ -103,7 +111,7 @@ let PhotoAlbum = {
     }
 }
 window.onload = function() {
-    // navBar.init();
+    navBar.init();
     PhotoAlbum.init();
     // $.delegate(document.getElementById("list"), "li", "click", clickListener);
     // checkCookie();
