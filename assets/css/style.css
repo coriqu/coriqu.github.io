@@ -290,22 +290,19 @@ img {
 .profile-description a {
     font-weight: bold;
 }
+@media screen and (max-width: 2500px)
+{
+    .img-container {
+       
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+    
+}
 @media screen and (max-width: 1700px)
 {
     .img-container {
-        /*position: relative;
-        display: grid;
-        margin: 75px;
-        margin-left: 305px;*/
+       
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        /*grid-gap: 10px;*/
-    }
-    .img-container.open {
-        /*grid-template-columns: 1fr;*/
-        /*display: block;
-        width: auto;
-        height: 100%*/
-        
     }
     
 }
