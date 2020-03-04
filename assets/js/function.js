@@ -3,17 +3,53 @@ const myPhotos = {
 }
 let navBar = {
     init: function() {
+        const heightOutput = document.querySelector('HTML');
+        const widthOutput = document.querySelector('HTML');
+
+        function reportWindowSize() {
+          // heightOutput.textContent = window.innerHeight;
+          // widthOutput.textContent = window.innerWidth;
+            // console.log(window.innerHeight,window.innerWidth);
+            if(window.innerWidth>=768) {
+                // $('#menu_close')[0].style.display  = 'none';
+                // $('#menu_open')[0].style.display  = 'none';
+                $('.menu-inner')[0].style.display  = 'block';
+                $('#menu_close')[0].style.visibility  = 'hidden';
+                $('#menu_open')[0].style.visibility  = 'hidden';
+            }
+            else {
+                if ($('#menu_open')[0].style.display == 'block') {
+                    $('.menu-inner')[0].style.display  = 'none';
+                } else if ($('#menu_close')[0].style.display  == 'block') {
+                    $('.menu-inner')[0].style.display  = 'block';
+                }
+                // $('.menu-inner')[0].style.display  = 'none';
+                // $('#menu_close')[0].style.display  = 'block';
+                // $('#menu_open')[0].style.display  = 'block';
+                $('#menu_close')[0].style.visibility  = 'visible';
+                $('#menu_open')[0].style.visibility  = 'visible';
+            }
+
+
+        }
+
+        window.onresize = reportWindowSize;
+            window.addEventListener('resize', reportWindowSize);
+
+
         $.delegate($("#menu_open")[0], "div", "click", function(e) {
             console.log('click on the menu')
-            // $('.menu-inner')[0].style.display  = 'block';
-            $('.menu-inner')[0].style.visibility  = 'visible'; 
+            $('.menu-inner')[0].style.display  = 'block';
+            // $('.menu-inner')[0].style.display  = 'visible'; 
             $('#menu_close')[0].style.display  = 'block';
+            $('#menu_open')[0].style.display  = 'none';
         });
         $.delegate($("#menu_close")[0], "div", "click", function(e) {
             console.log('click on the menu')
-            // $('.menu-inner')[0].style.display  = 'none';
-            $('.menu-inner')[0].style.visibility  = 'hidden'; 
+            $('.menu-inner')[0].style.display  = 'none';
+            // $('.menu-inner')[0].style.visibility  = 'hidden'; 
             $('#menu_close')[0].style.display  = 'none';
+            $('#menu_open')[0].style.display  = 'block';
         });
     }
 }
@@ -55,7 +91,7 @@ let PhotoAlbum = {
         console.log("right");
         let next = $(".active")[0].nextElementSibling;
         // console.log(next);
-        if (next == null || next.className !== "img-box") {
+        if (next == null || next.className == "img-cover") {
             next = $('.img-box')[0];
         }
         removeClass( $('.active')[0],'active');
@@ -66,7 +102,7 @@ let PhotoAlbum = {
         console.log("left");
 
         let pre = $(".active")[0].previousElementSibling;
-        if (pre.className !== "img-box") {
+        if (pre.className == "img-cover") {
             let imgBoxs = $('.img-box');
             let leng = imgBoxs.length;
             pre = $('.img-box')[leng-1];
@@ -111,6 +147,7 @@ let PhotoAlbum = {
     }
 }
 window.onload = function() {
+
     navBar.init();
     PhotoAlbum.init();
     // $.delegate(document.getElementById("list"), "li", "click", clickListener);
