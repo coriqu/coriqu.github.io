@@ -19,7 +19,7 @@ let navBar = {
             }
             else {
                 if ($('#menu_open')[0].style.display == 'block') {
-                    console.log("menu_open");
+                    // console.log("menu_open");
                     $('.menu-inner')[0].style.display  = 'none';
                 } else if ($('#menu_close')[0].style.display  == 'block') {
                     $('.menu-inner')[0].style.display  = 'block';
@@ -33,9 +33,9 @@ let navBar = {
 
 
         }
-
+        reportWindowSize();
         window.onresize = reportWindowSize;
-            window.addEventListener('resize', reportWindowSize);
+        window.addEventListener('resize', reportWindowSize);
 
 
         $.delegate($("#menu_open")[0], "div", "click", function(e) {
