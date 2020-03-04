@@ -10,7 +10,7 @@ let navBar = {
           // heightOutput.textContent = window.innerHeight;
           // widthOutput.textContent = window.innerWidth;
             // console.log(window.innerHeight,window.innerWidth);
-            if(window.innerWidth>=768) {
+            if(window.innerWidth>768) {
                 // $('#menu_close')[0].style.display  = 'none';
                 // $('#menu_open')[0].style.display  = 'none';
                 $('.menu-inner')[0].style.display  = 'block';
@@ -19,6 +19,7 @@ let navBar = {
             }
             else {
                 if ($('#menu_open')[0].style.display == 'block') {
+                    console.log("menu_open");
                     $('.menu-inner')[0].style.display  = 'none';
                 } else if ($('#menu_close')[0].style.display  == 'block') {
                     $('.menu-inner')[0].style.display  = 'block';
