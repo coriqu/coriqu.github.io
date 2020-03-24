@@ -170,7 +170,6 @@
     position: relative;
     height: 80%;
     background-color: #fff;
-    /*border: 1px solid red;*/
     box-shadow: 0 0 16px rgba(0,0,0,.15), 0 0 5px rgba(0,0,0,.1);
     border-radius: 5px;
     overflow-scrolling: touch;
@@ -180,7 +179,6 @@
 }
 .item-img-box,
 .item-info-box {
-    /*border: 1px solid red;*/
     margin: 30px;
 }
 .item-img-box img {
@@ -319,7 +317,6 @@
 {
     font-size: 14px;
     line-height: 1.2rem;
-    /*border: 1px solid red;   */
 }
 .list-img {
     position: relative;
@@ -384,7 +381,6 @@ img {
     display: block;
     width: auto;
     height: 80%;
-    border: 1px solid red;
 }
 .img-container.open>div.img-box:hover {
     opacity: 1;
@@ -429,14 +425,12 @@ img {
     height: 200px;
     margin-left: 75px;
     padding: 75px 0;
-    /*border: 1px solid red;*/
 
 }
 #photo-nav ul {
     position: absolute;
     bottom: 75px;
     width: 100%;
-    /*border: 1px solid red;*/
     margin: 0;
     /*padding: 0;*/
 }
@@ -520,7 +514,6 @@ img {
     /*height: 70px;*/
     right: 30px;
     cursor: pointer;
-    /*border: 1px solid red;*/
 
 }
 .burger .line {
@@ -617,7 +610,6 @@ img {
     overflow: hidden;
     transition: all 0.3s;
     cursor: pointer;
-    border: 1px solid red;
     /*margin: 100px;*/
     /*border-radius: 10px;*/
 }
@@ -720,7 +712,6 @@ img {
         margin-left: 0;
         padding: 0;
         background-color: #fff;
-        /*border: 1px solid red;*/
 
     }
     .menu .menu-title {
