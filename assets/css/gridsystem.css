@@ -9,6 +9,12 @@
     --color-neutral-dark: #332d2d;
     --color-neutral-medium: #988c8c;
     --color-neutral-light: #ece7e7;
+    --color-bg-light: #fafafa;
+    --color-bg-medium: #eee;
+    --color-bg-dark: #ccc;
+    --color-font-light: #666;
+    --color-font-medium: #332d2d;
+    --color-font-dark: #000;
     --color-main-light:#ccc;
     --color-main-medium:#ccc;
     --color-main-dark:#ccc;
@@ -29,11 +35,15 @@ body {
 }
 * {
     box-sizing: border-box;
+    font-size: inherit;
 }
-
+h1, h2, h3, h4 ,h5, h6 {
+	font-size: initial;
+}
 h1, h2, h3, h4 ,h5, h6, a, th {
 	/*font-family: 'Roboto', sans-serif;*/
 	/*font-family: 'Montserrat',  sans-serif;*/
+	color: var(--color-font-medium);
 	letter-spacing: 0.8px;
 	margin-bottom: -0.25em;
 }
@@ -62,13 +72,41 @@ p {
     word-spacing: 1px;
     line-height: 2.0em;
 }
+input,
+select {
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: 1px solid #ebebeb;
+    box-sizing: border-box;
+    color: #313131;
+    font-family: Clarkson, Helvetica, sans-serif;
+    font-size: 14px;
+    height: 36px;
+    line-height: 22px;
+    padding: 11px;
+    position: relative;
+/*    width: 100%;*/
+    /*margin: 5px 0;*/
+}
 [class*='col-']>.card {
 	height: 100%;
 }
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
+	grid-gap: 0;
+}
+.grid-gap-xxs {
+	grid-gap: 5px;
+}
+.grid-gap-xs {
 	grid-gap: 10px;
+}
+.grid-gap-md {
+	grid-gap: 30px;
+}
+.grid-gap-xl {
+	grid-gap: 50px;
 }
 .flex {
 	display: flex;
@@ -80,6 +118,34 @@ p {
 	align-items: center;
 	
 }
+.flex-justify-between {
+	display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.flex-justify-end {
+	display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: flex-end;
+    -ms-flex-pack: justify;
+    justify-content: flex-end;
+}
+.flex-align-items-end {
+	display: flex;
+	align-items: flex-end;
+}
+.flex-align-content-around {
+	display: flex;
+	align-content: stretch;
+	flex-wrap: wrap;
+	/*flex-direction: column;*/
+}
+/*.flex-align-content-center {
+	display: flex;
+	align-content: center;
+}*/
 .flex-width-60 {
 	margin: auto;
 	width: 60%;
@@ -107,18 +173,18 @@ p {
 .col-12 {	grid-column: span 12;	}
 @media (min-width: 768px) {
 /*@media (min-width: 1024px) {*/
-	.col-xs-1 {	grid-column: span 1;	}
-	.col-xs-2 {	grid-column: span 2;	}
-	.col-xs-3 {	grid-column: span 3;	}
-	.col-xs-4 {	grid-column: span 4;	}
-	.col-xs-5 {	grid-column: span 5;	}
-	.col-xs-6 {	grid-column: span 6;	}
-	.col-xs-7 {	grid-column: span 7;	}
-	.col-xs-8 {	grid-column: span 8;	}
-	.col-xs-9 {	grid-column: span 9;	}
-	.col-xs-10 {grid-column: span 10;	}
-	.col-xs-11 {grid-column: span 11;	}
-	.col-xs-12 {grid-column: span 12;	}
+	.col-sm-1 {	grid-column: span 1;	}
+	.col-sm-2 {	grid-column: span 2;	}
+	.col-sm-3 {	grid-column: span 3;	}
+	.col-sm-4 {	grid-column: span 4;	}
+	.col-sm-5 {	grid-column: span 5;	}
+	.col-sm-6 {	grid-column: span 6;	}
+	.col-sm-7 {	grid-column: span 7;	}
+	.col-sm-8 {	grid-column: span 8;	}
+	.col-sm-9 {	grid-column: span 9;	}
+	.col-sm-10 {grid-column: span 10;	}
+	.col-sm-11 {grid-column: span 11;	}
+	.col-sm-12 {grid-column: span 12;	}
 }
 @media (min-width: 1024px) {
 /*@media (min-width: 1280px) {*/
@@ -185,4 +251,54 @@ p {
 	.col-xxl-10 {grid-column: span 10;	}
 	.col-xxl-11 {grid-column: span 11;	}
 	.col-xxl-12 {grid-column: span 12;	}
+}
+
+.btn-add-bag,
+.btn-add-bag-xl {
+	text-align: center;
+    cursor: pointer;
+    font-weight: 700;
+    display: inline-flex;
+    position: relative;
+    -webkit-box-align: center;
+    align-items: center;
+    box-shadow: none;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-appearance: none;
+    height: auto;
+    text-transform: none;
+    background-color: #fff;
+    color: #405379;
+    font-size: 12px;
+    min-height: 32px;
+    line-height: 14px;
+    width: 100%;
+    max-width: unset;
+    transition: all 0.15s linear 0s;
+    padding: 7px 6px;
+    flex: 1 1 0%;
+    /*margin: 14px 0px;*/
+    /*margin-top: 14px;*/
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-image: initial;
+    border-color: rgb(217, 217, 217);
+}
+.btn-add-bag-xl {
+	min-height: 45px;
+	background-color: var(--color-bg-medium);
+}
+.btn {
+	background-color: #000;
+    border-color: #000;
+    color: #fff;
+    margin-top: 14px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: .0625rem solid;
+    font-size: .875rem;
+    font-weight: 600;
+    text-align: center;
 }

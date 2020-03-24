@@ -10,6 +10,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Exo&display=swap" rel="stylesheet">
 </head>
 <body>
+	
 	<div class="container">
 		<div class="menu">
 			<a href="index.html">
@@ -47,7 +48,7 @@
 	        </div>
 	    </div>
 
-		<div class="img-container grid">
+		<div class="img-container grid grid-gap-xs">
 			<div class="img-cover">
 				<div class="left" id="left"></div>
 				<div class="middle" id="middle"></div>
@@ -105,26 +106,8 @@
 
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/function.js"></script>
-	<!-- <script src="assets/js/jquery.js"></script>
 	<script>
-		$(".img-container")[0].addEventListener('click',function(e) {
-			if(e.target&&e.target.nodeName.toUpperCase()=="IMG") {
-				
-       			let a = e.target;
-       			let index = $(".img-container img").index(a);
-       			if($('.img-container .img-box')[index].className == "img-box active") {
-       				$(".img-container")[0].className = "img-container";
-       				$('.img-container .img-box').removeClass('active');
-       			}
-       			else {
-       				$(".img-container")[0].className = "img-container open";
-       				$('.img-container .img-box').removeClass('active');
-       				$('.img-container .img-box')[index].className = "img-box active";
-       			}
-       			
-       		}
-			
-		})
-	</script> -->					
+		PhotoAlbum.init();
+	</script>		
 </body>
 </html>

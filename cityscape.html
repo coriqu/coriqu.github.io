@@ -12,11 +12,23 @@
 <body>
 	<div class="container">
 		<div class="menu">
+			<a href="index.html">
+				<span class="menu-title">coriq_</span>
+			</a>
+			<div class="burger" id="menu_open" style="display: block;">
+				<div class="line"></div>
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
+			<div class="burger" id="menu_close" style="display: none;">
+				<div class="line"></div>
+				<div class="line"></div>
+			</div>
 	        <div class="menu-inner">
-	            <span class="menu-title">coriq_</span>
+	            <!-- <span class="menu-title">coriq_</span> -->
 	            <nav>
 	                <ul>
-	                	<li><a class="active" href="cityscape.html">CITYSCAPE</a></li>
+	                	<li><a href="cityscape.html">CITYSCAPE</a></li>
 	                	<li><a href="landscape.html">LANDSCAPE</a></li>
 	                	<li><a href="portrait.html">PORTRAIT</a></li>
 	                	<li><a href="life.html">LIFE</a></li>
@@ -27,52 +39,63 @@
 	            		<li><a href="shop.html">SHOP</a></li>
 	                	<li><a href="about.html">ABOUT</a></li>
 	                </ul>
+	                <ul class="icon">
+	                	<li class="flex-center"><a class="flex-width-80" href="https://www.instagram.com/coriq_/"><img src="assets/img/icon/instagram.svg" alt=""></a></li>
+	                	<li class="flex-center"><a class="flex-width-80" href="mailto: CQU4@art.edu"><img src="assets/img/icon/envelope-regular.svg" alt=""></a></li>
+	                </ul>
 	            </nav>
 	        </div>
 	    </div>
 
-		<div class="img-container grid grid-3">
+		<div class="img-container grid grid-gap-md">
 			<div class="img-cover">
 				<div class="left" id="left"></div>
 				<div class="middle" id="middle"></div>
 				<div class="right" id="right"></div>
 			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/1.JPG" alt="">
-			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/2.JPG" alt="">
-			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/3.JPG" alt="">
-			</div>
-			<div class="img-box">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
 				<img class="horizontal" src="assets/img/cityscape/4.JPG" alt="">
 			</div>
-			<!-- <div class="img-box">
-				<img class="horizontal" src="assets/img/cityscape/5.JPG" alt="">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/2.JPG" alt="">
 			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/4.JPG" alt="">
-			</div> -->
-			<div class="img-box">
-				<img src="assets/img/cityscape/5.JPG" alt="">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/3.JPG" alt="">
 			</div>
-			<div class="img-box">
-				<img class="horizontal" src="assets/img/cityscape/6.JPG" alt="">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img class="horizontal" src="assets/img/cityscape/11.JPG" alt="">
 			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/7.JPG" alt="">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img class="horizontal" src="assets/img/cityscape/10.JPG" alt="">
 			</div>
-			<div class="img-box">
+			
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/1.JPG" alt="">
+			</div>
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img class="horizontal" src="assets/img/cityscape/12.JPG" alt="">
+			</div>
+			
+			
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img class="horizontal" src="assets/img/cityscape/9.JPG" alt="">
+			</div>
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
 				<img src="assets/img/cityscape/8.JPG" alt="">
 			</div>
-			<!-- <div class="img-box">
-				<img src="assets/img/cityscape/9.JPG" alt="">
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/5.JPG" alt="">
 			</div>
-			<div class="img-box">
-				<img src="assets/img/cityscape/10.JPG" alt="">
-			</div> -->
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img class="horizontal" src="assets/img/cityscape/6.JPG" alt="">
+			</div>
+
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/13.JPG" alt="">
+			</div>
+			<div class="img-box col-xxl-3 col-xl-4 col-md-6 col-sm-12 col-12">
+				<img src="assets/img/cityscape/14.JPG" alt="">
+			</div>
 			
 		</div>
 		<div id="photo-nav">
@@ -89,26 +112,8 @@
 
 	<script src="assets/js/util.js"></script>
 	<script src="assets/js/function.js"></script>
-	<!-- <script src="assets/js/jquery.js"></script>
 	<script>
-		$(".img-container")[0].addEventListener('click',function(e) {
-			if(e.target&&e.target.nodeName.toUpperCase()=="IMG") {
-				
-       			let a = e.target;
-       			let index = $(".img-container img").index(a);
-       			if($('.img-container .img-box')[index].className == "img-box active") {
-       				$(".img-container")[0].className = "img-container";
-       				$('.img-container .img-box').removeClass('active');
-       			}
-       			else {
-       				$(".img-container")[0].className = "img-container open";
-       				$('.img-container .img-box').removeClass('active');
-       				$('.img-container .img-box')[index].className = "img-box active";
-       			}
-       			
-       		}
-			
-		})
-	</script> -->					
+		PhotoAlbum.init();
+	</script>		
 </body>
 </html>

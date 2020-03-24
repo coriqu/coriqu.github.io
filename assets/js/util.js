@@ -221,8 +221,8 @@ function getPosition(element) {
 // your implement
 // 实现一个简单的Query
 function $(selector,root) {
-	console.log(selector[0]);
-	 var signal = selector[0]; //
+	// console.log(selector[0]);
+	var signal = selector[0]; //
     var allChildren = null;
     var content = selector.substr(1);
     var currAttr = null;
