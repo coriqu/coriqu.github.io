@@ -458,21 +458,30 @@ img {
     padding-top: 100%;
 
 }
+.about-intro {
+    /*margin: 3rem 0;*/
+    padding-top: 3rem;
+}
+.profile-photo-box {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-top: 100%;
+
+}
 .profile-photo {
     position: absolute;
-    top: 10%;
-    left: 15%;
+    top: 0%;
+    left: 10%;
     /*bottom: 0;*/
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 100%;
     
-    display: flex;
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
     overflow: hidden;
     /*border: 1px solid green;*/
-    border-radius: 50%;
+    /*border-radius: 50%;*/
+    border-radius: 5px;
     
 }
 .profile-photo img {
@@ -487,11 +496,12 @@ img {
     height: auto;
 }
 .profile-description {
-    padding: 2em 4em;
+    padding: 2em 3em;
 }
 .profile-description a {
     font-weight: bold;
 }
+
 
 
 
@@ -803,4 +813,5 @@ img {
         padding-top: 100%;
         margin-bottom: -30%;
     }
+    
 }

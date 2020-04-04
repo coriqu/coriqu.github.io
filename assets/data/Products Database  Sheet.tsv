@@ -1,0 +1,15 @@
+id	date_create	date_modify	title	category	images	thumbnail	price	description	quantity
+1	2014-11-17 19:52:15	2014-11-17 19:52:15	Banana	fruit	fruit_banana.jpg	fruit_banana_m.jpg	2	Bananas are a source of potassium in the form of a long yellow tube.	40
+2	2014-11-24 20:57:33	2014-11-24 20:57:33	Apple	fruit	fruit_apple.jpg	fruit_apple_m.jpg	5	Ann apple is a small round fruit with a thin red or green skin.	40
+3	2015-04-21 13:03:28	2015-04-21 13:03:28	Grapes	fruit	fruit_grapes.jpg	fruit_grapes_m.jpg	6.5	Grapes come in a bunch of small round flesh covered shapes that can be purple or green.	50
+4	2015-04-21 13:03:28	2015-04-21 13:03:28	Mulberries	fruit	fruit_mulberries.jpg,fruit_raspberries.jpg	fruit_mulberries_m.jpg	19.99	Mulberries are a small cluster of tiny outer fleshy seeds, in a generally dark purple color.	10
+5	2015-04-21 13:23:46	2015-04-21 13:03:28	Raspberries	fruit	fruit_raspberries.jpg	fruit_raspberries_m.jpg	8.34	Mulberries are a small cluster of tiny outer fleshy seeds, in a generally dark red color.	35
+6	2015-04-21 13:03:28	2015-04-21 13:03:28	Strawberry	fruit	fruit_strawberry.jpg	fruit_strawberry_m.jpg	4.99	A strawberry is a small heart shaped object with seeds around a red skin.	40
+7	2015-05-05 12:31:24	2015-05-05 12:31:24	Watermelon	fruit	fruit_watermelon.jpg	fruit_watermelon_m.jpg	12.5	A watermelon is a large spheroid with a green outer rind and a red pulpy interior.	10
+8	2015-07-27 15:08:08	2015-07-27 15:08:08	Beet	vegetable	vegetable_beet.jpg	vegetable_beet_m.jpg	2	Beets are a small red root.	15
+9	2015-12-09 16:05:14	2015-12-09 16:05:14	Carrot	vegetable	vegetable_carrot.jpg	vegetable_carrot_m.jpg	7.63	A carrot is a medium sized conical root with an orange color.	50
+10	2017-05-20 15:19:08	2017-05-20 15:19:08	Celery	vegetable	vegetable_celery.jpg	vegetable_celery_m.jpg	2.99	Celery is a long half tube stalk with leaves coming out the top end, and is green.	25
+11	2017-12-06 13:58:53	2017-12-06 13:58:53	Lettuce	vegetable	vegetable_lettuce.jpg	vegetable_lettuce_m.jpg	4.5	Lettuce is a round or stalked bunch of leaves that are usually green.	45
+12	2017-12-06 18:09:04	2017-12-06 18:09:04	Peas	vegetable	vegetable_peas.jpg	vegetable_peas_m.jpg	5	Peas are a group of seeds in a green pod.	35
+13	2018-04-23 11:49:40	2018-04-23 11:49:40	Potato	vegetable	vegetable_potato.jpg	vegetable_potato_m.jpg	8.3	Potato has eyes to look into your soul.	30
+86	2018-05-16 13:05:09	2018-05-16 13:05:09	Durian	fruit	fruit_durian.jpg	fruit_durian_m.jpg	3.99	I only know the durian because of The Legend of Zelda.	40

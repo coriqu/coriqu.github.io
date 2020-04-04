@@ -117,25 +117,28 @@ let PhotoAlbum = {
     }, 
     nextPhoto: function() {
         console.log("right");
-        let next = $(".active")[0].nextElementSibling;
-        // console.log(next);
+        let current = $(".active",$(".img-container")[0])[0];
+        let next = current.nextElementSibling;
+        console.log($(".active",$(".img-container")[0])[0]);
         if (next == null || next.className == "img-cover") {
             next = $('.img-box')[0];
         }
-        removeClass( $('.active')[0],'active');
-        addClass(next, "active")
+        removeClass( current,'active');
+        addClass(next, "active");
+      
+        
     },
 
     prevPhoto: function() {
         console.log("left");
-
-        let pre = $(".active")[0].previousElementSibling;
+        let current = $(".active",$(".img-container")[0])[0];
+        let pre = current.previousElementSibling;
         if (pre.className == "img-cover") {
             let imgBoxs = $('.img-box');
             let leng = imgBoxs.length;
             pre = $('.img-box')[leng-1];
         }
-        removeClass( $('.active')[0],'active');
+        removeClass( current,'active');
         addClass(pre, "active")
     },
 
@@ -143,7 +146,7 @@ let PhotoAlbum = {
         console.log("middle");
 
         removeClass( $('.img-container')[0],'open');
-        removeClass( $('.active')[0],'active');
+        removeClass( $(".active",$(".img-container")[0])[0],'active');
 
     },
 
