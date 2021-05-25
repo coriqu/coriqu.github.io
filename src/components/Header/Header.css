@@ -1,0 +1,38 @@
+.topBotomBordersOut a {
+    line-height: 3;
+    position: relative;
+}
+.topBotomBordersOut a:before, 
+.topBotomBordersOut a:after,
+.topBotomBordersOut a.active:before,
+.topBotomBordersOut a.active:after
+{
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.topBotomBordersOut a:before,
+.topBotomBordersOut a.active:before
+{
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.topBotomBordersOut a:after,
+.topBotomBordersOut a.active:after
+{
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.topBotomBordersOut a:hover:before, .topBotomBordersOut a:hover:after
+{
+    opacity: 1;
+    transform: translateY(0px);
+}
