@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.820a12d9.chunk.css",
-    "main.js": "/static/js/main.e7ed8532.chunk.js",
-    "main.js.map": "/static/js/main.e7ed8532.chunk.js.map",
+    "main.js": "/static/js/main.90de264d.chunk.js",
+    "main.js.map": "/static/js/main.90de264d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.99cc40c9.js",
     "runtime-main.js.map": "/static/js/runtime-main.99cc40c9.js.map",
     "static/css/2.df3cb2eb.chunk.css": "/static/css/2.df3cb2eb.chunk.css",
@@ -140,7 +140,7 @@
     "static/media/collateral.png": "/static/media/collateral.aa24e62b.png",
     "static/media/competitors.png": "/static/media/competitors.9c3a1a66.png",
     "static/media/concept.6e08b34c.gif": "/static/media/concept.6e08b34c.gif",
-    "static/media/coriqu-resume.ad307f8a.pdf": "/static/media/coriqu-resume.ad307f8a.pdf",
+    "static/media/coriqu-resume.f47700c1.pdf": "/static/media/coriqu-resume.f47700c1.pdf",
     "static/media/cover.svg": "/static/media/cover.99fb4e19.svg",
     "static/media/cover.9b5d6143.png": "/static/media/cover.9b5d6143.png",
     "static/media/cover02.png": "/static/media/cover02.41433663.png",
@@ -278,6 +278,6 @@
     "static/css/2.df3cb2eb.chunk.css",
     "static/js/2.0b3e2981.chunk.js",
     "static/css/main.820a12d9.chunk.css",
-    "static/js/main.e7ed8532.chunk.js"
+    "static/js/main.90de264d.chunk.js"
   ]
 }
