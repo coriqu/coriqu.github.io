@@ -29,15 +29,17 @@ const Header = () => {
             	
             </a>
             <ul className="menu-link laptop topBotomBordersOut flex flex-center">
-        		<li><NavLink exact={true} activeClassName='active' to='/'>UX/Ui</NavLink></li>
-        		<li><NavLink exact={true} activeClassName='active' to="/Coding">Coding</NavLink></li>
+        		<li><NavLink exact={true} activeClassName='active' to='/'>Work</NavLink></li>
+        		{/*<li><NavLink exact={true} activeClassName='active' to="/Coding">Coding</NavLink></li>*/}
+            <li><NavLink exact={true} activeClassName='active' to="/Side">Side</NavLink></li>
         		<li><NavLink exact={true} activeClassName='active' to="/Photography">Photography</NavLink></li>
             	<li><NavLink exact={true} activeClassName='active' to="/About">ABOUT</NavLink></li>
             </ul>
             {sidebar&&(
             <ul className="menu-link">
         		<li><NavLink exact={true} activeClassName='active' to="/" onClick={showSidebar}>UX/UI</NavLink></li>
-        		<li><NavLink exact={true} activeClassName='active' to="/Coding" onClick={showSidebar}>Coding</NavLink></li>
+        		{/*<li><NavLink exact={true} activeClassName='active' to="/Coding" onClick={showSidebar}>Coding</NavLink></li>*/}
+            <li><NavLink exact={true} activeClassName='active' to="/Side" onClick={showSidebar}>Side</NavLink></li>
         		<li><NavLink exact={true} activeClassName='active' to="/Photography" onClick={showSidebar}>Photography</NavLink></li>
             	<li><NavLink exact={true} activeClassName='active' to="/About" onClick={showSidebar}>ABOUT</NavLink></li>
             </ul>

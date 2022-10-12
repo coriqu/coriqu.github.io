@@ -10,8 +10,14 @@ import View03 from './assets/img/astrobuddy/video/Omniscient-view.gif';
 import Module from './assets/img/astrobuddy/video/Astrobuddy.gif';
 import Module2D from './assets/img/astrobuddy/video/2D-view.gif';
 import Task from './assets/img/astrobuddy/video/Astrobuddy.gif';
+import ManageTask from './assets/img/astrobuddy/video/ManageTask.gif';
 import CreateTask from './assets/img/astrobuddy/video/CreateTask.gif';
+import PositionControl from './assets/img/astrobuddy/video/PositionControl.gif';
 
+import Point from './assets/img/astrobuddy/video/point.gif';
+import Line from './assets/img/astrobuddy/video/line.gif';
+import S2d from './assets/img/astrobuddy/video/2d.gif';
+import S3d from './assets/img/astrobuddy/video/3d.gif';
 // const Div = styled.div`
 //   	--color-header: #191919 !important; 
 //     --color-text: #323232 !important;
@@ -221,7 +227,6 @@ const Astrobuddy = (props) => {
 							<ul>
 								<li>UI/UX Design</li>
 								<li>Interaction Design</li>
-								<li>Interaction Design</li>
 							</ul>
 						</div>
 						<div className="col-xl-3 col-md-3 col-xs-6 col-6">
@@ -235,7 +240,7 @@ const Astrobuddy = (props) => {
 						<div className="col-xl-3 col-md-3 col-xs-6 col-6">
 							<h4>Duration</h4>
 							<ul>
-								<li>Feb 2021 - Present</li>
+								<li>Feb 2021 - May 2021</li>
 							</ul>
 							
 						</div>
@@ -441,6 +446,28 @@ const Astrobuddy = (props) => {
 							<h3>{item.title}</h3>
 		              </DesignGoal>
 		            ))}
+		            {
+		              [{ 
+		                  title: "Point (1)",
+		                  gif: Point,
+		              },
+		              { 
+		                  title: "Line (2+)",
+		                  gif: Line,
+		              },
+		              { 
+		                  title: "Plane (3+)",
+		                  gif: S2d,
+		              },
+		              { 
+		                  title: "3D (4+)",
+		                  gif: S3d,
+		              }
+		            ].map((item,i) => (
+		            	<DesignGoal style={{padding: "4px"}} key = {i} className="col-xl-3 col-md-6 col-xs-6 col-12">
+		                	<img src={item.gif} style={{width: "100%"}} alt="" />
+		              </DesignGoal>
+		              ))}
 					</div>
 				</div>
 				<div>
@@ -533,7 +560,7 @@ const Astrobuddy = (props) => {
 					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>2D & 3D view of Astro Buddy</h1>
-						<p>T2D view of Astro Buddy is an unfolded cube view that shows the six ports at a time. 
+						<p>2D view of Astro Buddy is an unfolded cube view that shows the six ports at a time. 
 						Operators can easily see the availability of each port.</p>
 					</div>
 					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
@@ -557,35 +584,51 @@ const Astrobuddy = (props) => {
 
 
 				<OutcomeOverview className="grid">
-					<div className="col-1">
+					<div className="col-1"></div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={ManageTask} alt="" />
 					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Easily manage the tasks</h1>
 					</div>
 
-					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
-						<img className="widthfixed" src={images['Task.png'].default} alt="" />
-					</div>
-
 				</OutcomeOverview>
+
 
 
 
 				<OutcomeOverview className="grid">
 					<div className="col-1">
 					</div>
-					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
-						<img className="widthfixed" src={CreateTask} alt="" />
-					</div>
-
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Create the task</h1>
 						<p>Tasks can be <strong>manually created</strong> by operators and astronauts based on their needs. 
 					They can <strong>customize</strong> the task based on different functions and tools that each module provides 
 					and set the different <strong>range of movement</strong> for Astro Buddy when processing the task.</p>
 					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={CreateTask} alt="" />
+					</div>
+
+					
 					
 				</OutcomeOverview>
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					
+
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={PositionControl} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Position control</h1>
+						<p></p>
+					</div>
+
+				</OutcomeOverview>
+
 
 				{/*<OutcomeOverview className="grid">
 					<div className="description col-12 text-center">

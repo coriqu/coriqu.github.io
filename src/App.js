@@ -20,7 +20,10 @@ import Spirits from './Spirits.js';
 import About from './About.js';
 import Jasper from './jasper.js';
 import Astrobuddy from './Astrobuddy.js';
+import Wyndham from './Wyndham.js';
 
+
+import Side from './Side.js';
 import Coding from './Coding.js';
 import Photography from './Photography.js';
 
@@ -51,6 +54,7 @@ class App extends React.Component {
 				    	<Header></Header>
 				    		<ScrollToTop>
 				    		<Switch>
+				    			<Route path="/Wyndham" component={Wyndham} />	
 				    			<Route path="/Jasper" component={Jasper} />		
 				    			<Route path="/Astrobuddy" component={Astrobuddy} />	
 								<Route path="/Beerest" component={Beerest} />
@@ -58,7 +62,8 @@ class App extends React.Component {
 								<Route path="/Explorest" component={Explorest} />
 								<Route path="/Spirits" component={Spirits} />
 								<Route path="/About" component={About} />
-								<Route path="/Coding" component={Coding} />
+								{/*<Route path="/Coding" component={Coding} />*/}
+								<Route path="/Side" component={Side} />
 								<Route path="/Photography" component={Photography} />
 								<Route path="/" component={Home} />
 								<Redirect to="/" />

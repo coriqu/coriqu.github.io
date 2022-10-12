@@ -125,10 +125,13 @@ class About extends React.Component{
 						</div>
 						
 						<div className="profile-description col-xl-8 col-md-8 col-sm-12 col-12">
-							<h2>Hi there! I'm Cori</h2>
-							<p>I’m currently a graduate student focusing on <strong>Product Design & UX Research</strong>. Previously I studied  <strong>Computer Science</strong> and worked as a <strong>Front-end developer</strong>. My passion lies in solving complex problems by putting design thinking into practice in real-world projects and making an impact on society through the Human-centered design approach. I see myself as a facilitator, enabling collaboration and turning visions into practical solutions. </p>
-							<p>Outside the world of design and coding, I love traveling and taking photos. I share my adventure and photography works on Instagram as <a href="https://www.instagram.com/coriq_/" rel="noreferrer" target="_blank">@coriq_</a>.</p>
-							<p>I'm actively looking for internships and full-time opportunities in UI/UX Design, Front-end Development, or something in between! Check out my <a href={Resume} rel="noreferrer" target="_blank">RESUME</a>.</p>
+							<h2>Hello! I'm Cori</h2>
+							<p>I’m a <strong>product designer</strong> who also does <strong>front-end</strong> coding. <strong>I'm a design system enthusiast, problem solver, and facilitator. </strong> 
+							My passion lies in solving complex problems by putting design thinking into practice in real-world projects 
+							and making an impact on society through the Human-centered design approach.</p>
+							<p>Outside the world of design and coding, I love traveling and taking photos. 
+							I share my adventure and photography works on Instagram as <a href="https://www.instagram.com/coriq_/" rel="noreferrer" target="_blank">@coriq_</a>.</p>
+							<p>I'm actively looking for new opportunities! Check out my <a href={Resume} rel="noreferrer" target="_blank">RESUME</a>.</p>
 						</div>
 					</div>
 		    	</div>		
@@ -141,17 +144,29 @@ class About extends React.Component{
 								<SectionTitle>Experience</SectionTitle>
 								{
 					              [{ 
-					                  title: "UX Design Intern",
-					                  company: "Jasper Financial - New York, NY (Remote)",
+					                  title: "UI/UX Designer",
+					                  company: "Wyndham Destination - New York, NY",
 					                  description: '',
-					                  time: "Feb 2021 – Present"
+					                  time: "Nov 2021 – Now"
 					              },
 					              { 
+					                  title: "UI/UX Designer",
+					                  company: "360 Design - New York, NY",
+					                  description: '',
+					                  time: "Jul 2021 – Oct 2021"
+					              },
+					              { 
+					                  title: "UI/UX Designer & Front-End Developer",
+					                  company: "Jasper Financial - New York, NY (Remote)",
+					                  description: '',
+					                  time: "Feb 2021 – Jun 2021"
+					              },
+					              /*{
 					                  title: "Product Designer ",
 					                  company: "NASA (Sponsorship Project) San Francisco, CA",
 					                  description: '',
-					                  time: "Feb 2021 – Present"
-					              },
+					                  time: "Feb 2021 – May 2021"
+					              },*/
 					              { 
 					                  title: "Graphic Designer",
 					                  company: "AnnaClaire Studio - Sydney, Australia",
@@ -159,7 +174,7 @@ class About extends React.Component{
 					                  time: "Apr 2019 – Jul 2019"
 					              },
 					              { 
-					                  title: "Frontend Engineer Intern",
+					                  title: "Front-End Development Intern",
 					                  company: "Lenovo - Beijing, China",
 					                  description: '',
 					                  time: "Mar 2018 – Jun 2018"

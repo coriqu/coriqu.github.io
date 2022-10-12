@@ -15,12 +15,13 @@ import photography_logo from './assets/img/photography/cover.png';
 import spirit_logo from './assets/img/spirit/logo.svg';
 import Jasper_logo from './assets/img/jasper/logo-j.svg';
 import Astro_logo from './assets/img/astrobuddy/nasa.svg';
+import Wyndham_logo from './assets/img/wyndham/logo-wyndham-destinations.svg';
 
 
 
 // import beerest_hover from './assets/img/beerest/concept.gif'
 import beerest_hover from './assets/img/beerest/hero2.png';
-import explorest_hover from './assets/img/explorest/mockup.png'
+// import explorest_hover from './assets/img/explorest/mockup.png'
 import beauty_hover from './assets/img/beauty/visual_design5.png';
 import spirits_hover from './assets/img/spirit/hero1.png';
 import jasper_hover from './assets/img/jasper/landing.png';
@@ -28,7 +29,18 @@ import astro_hover from './assets/img/astrobuddy/cover02.png';
 
 import logo from './assets/img/logo/logo-s-white.svg';
 const controls = [
-	
+	// { 
+ //    	title: 'Wyndham Destinations',
+	// 	description: 'Managed and refined design system’s foundations, components, and patterns on both design and front-end sides.',
+	// 	// NASA Sponsorship Project
+	// 	label:['Design System'] ,
+	// 	img: Wyndham_logo,
+	// 	img2: Wyndham_logo,
+	// 	size: '30%',
+	// 	backgroundColor: '#000',
+	// 	fontColor: "#fff",
+	// 	link: '/wyndham'
+	// },
 	{ 
     	title: 'Astro Buddy',
 		description: 'Astro Buddy is a modular robot that helps astronauts in space.',
@@ -60,24 +72,24 @@ const controls = [
 		label:['Data visualization', 'Case Study', 'Coding'] ,
 		img: beerest_logo,
 		img2: beerest_hover,
-		size: '45%',
+		size: '30%',
 		// backgroundColor: '#0F2C2F', 
 		backgroundColor: '#dedede',
 		fontColor: "#222",
 		link: '/beerest'
 	},
-    { 
-    	title: 'Rebeauty',
-		description: 'Designing a safer experience for people to buy and sell second-hand beauty products online.' ,
-		label:['Case Study', 'UI/UX Design'] ,
-		img: beauty_logo,
-		img2: beauty_hover,
-		size: '18%',
-		// backgroundColor: '#5F5496',
-		backgroundColor: '#4D3C71',
-		fontColor: "#fff",
-		link: '/Rebeauty'
-	},
+ //    { 
+ //    	title: 'Rebeauty',
+	// 	description: 'Designing a safer experience for people to buy and sell second-hand beauty products online.' ,
+	// 	label:['Case Study', 'UI/UX Design'] ,
+	// 	img: beauty_logo,
+	// 	img2: beauty_hover,
+	// 	size: '18%',
+	// 	// backgroundColor: '#5F5496',
+	// 	backgroundColor: '#4D3C71',
+	// 	fontColor: "#fff",
+	// 	link: '/Rebeauty'
+	// },
  //    { 
  //    	title: 'Explorest',
 	// 	description: 'Explorest APP User Experience Redesign.',
@@ -88,17 +100,17 @@ const controls = [
 	// 	backgroundColor: '#00B2BF',
 	// 	link: '/Explorest'
 	// },
-    { 
-    	title: 'Spirits In The Sky',
-		description: 'Cocktail bar branding.',
-		label:['Branding', 'Visual Design', 'Web Design', 'Motion Graphics'],
-		img: spirit_logo,
-		img2: spirits_hover,
-		size: '30%',
-		backgroundColor: '#0a1f48',
-		fontColor: "#fff",
-		link: '/Spirits'
-	},
+ //    { 
+ //    	title: 'Spirits In The Sky',
+	// 	description: 'Cocktail bar branding.',
+	// 	label:['Branding', 'Visual Design', 'Web Design', 'Motion Graphics'],
+	// 	img: spirit_logo,
+	// 	img2: spirits_hover,
+	// 	size: '30%',
+	// 	backgroundColor: '#0a1f48',
+	// 	fontColor: "#fff",
+	// 	link: '/Spirits'
+	// },
 	// { 
  //    	title: 'Gallery',
 	// 	description: 'Motion graphics',
@@ -347,7 +359,7 @@ const Home = (props) => {
 	<div className="portfolio-content grid flex-width-80 grid-gap-md" id={"/#project"} style={{marginTop: "120px"}}>
 
 	{controls.map((project,index) => (
-        <ProjectSection 
+        <ProjectSection2 
         	key = {project.title} 
             title={project.title} 
             description={project.description}

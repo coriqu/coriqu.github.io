@@ -128,6 +128,10 @@ const OutcomeOverview = styled.div`
 		width: 80%;
 		height: auto;
 	}
+	.image img.widthfixed2 {
+		width: 100%;
+		height: auto;
+	}
 `;
 const DesignGoal = styled.div`
 	display: flex;
@@ -172,15 +176,14 @@ const DesignGoal = styled.div`
 `
 const H2 = styled.h4`
 	opacity: 0.2;
-	// margin: 0 0 -100px 0;
 	font-weight: 800;
-    font-size: 4em;
+    font-size: 3em;
     color: #111;
-    margin-top: 80px;
+    // margin-top: 0px;
     margin-bottom: 0;
     @media (max-width: 992px) {
-	    font-size: 5em;
-	    margin: 0 0 -50px 0;
+	    font-size: 3em;
+	    margin: 0 0 0 0;
 	}
 `;
 const Dot = styled.div`
@@ -379,13 +382,13 @@ const Jasper = (props) => {
 				<OutcomeOverview className="grid">
 					<div className="col-2">
 					</div>
-					<div className="description col-xl-4 col-md-4 col-xs-12 col-12">
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Design system</h1>
 						<p>Building a design system for Jasper cross-platform SaaS App.</p>
 						<div><span className="tag">Coming soon...</span></div>
 					</div>
-					<div className="image col-xl-6 col-md-6 col-xs-12 col-12">
-						<img src={images['cover.svg'].default} alt="jasper landing page" />
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img src={images['DesignSystem.png'].default} className="widthfixed2" alt="Jasper Design System" />
 					</div>
 				</OutcomeOverview>
 			</div>
@@ -417,10 +420,13 @@ const Jasper = (props) => {
 			</div>
 
 {/*-----------------------------------The approach-----------------------------------*/}
-			<div className="section-box fullscreen-container flex flex-center">
+			<div className="section-box">
 				<div className="flex-width-60">
 					<H2>The approach</H2>
 				</div>
+			</div>
+			<div className="section-box fullscreen-container flex flex-center">
+				
 				<OutcomeOverview className="grid">
 					<div className="col-2">
 					</div>
