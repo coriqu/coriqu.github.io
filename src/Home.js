@@ -26,26 +26,27 @@ import beauty_hover from './assets/img/beauty/visual_design5.png';
 import spirits_hover from './assets/img/spirit/hero1.png';
 import jasper_hover from './assets/img/jasper/landing.png';
 import astro_hover from './assets/img/astrobuddy/cover02.png';
+import Wyndham_hover from './assets/img/wyndham/hero.png';
 
 import logo from './assets/img/logo/logo-s-white.svg';
 const controls = [
-	// { 
- //    	title: 'Wyndham Destinations',
-	// 	description: 'Managed and refined design system’s foundations, components, and patterns on both design and front-end sides.',
-	// 	// NASA Sponsorship Project
-	// 	label:['Design System'] ,
-	// 	img: Wyndham_logo,
-	// 	img2: Wyndham_logo,
-	// 	size: '30%',
-	// 	backgroundColor: '#000',
-	// 	fontColor: "#fff",
-	// 	link: '/wyndham'
-	// },
+	{ 
+    	title: 'Wyndham Destinations',
+		description: 'I led multi-brand design systems in different stages as a design system thinker, advocate, and maintainer.',
+		// NASA Sponsorship Project
+		label:['Design System'] ,
+		img: Wyndham_logo,
+		img2: Wyndham_hover,
+		size: '30%',
+		backgroundColor: '#000',
+		fontColor: "#fff",
+		link: '/wyndham'
+	},
 	{ 
     	title: 'Astro Buddy',
 		description: 'Astro Buddy is a modular robot that helps astronauts in space.',
 		// NASA Sponsorship Project
-		label:['Interaction Design'] ,
+		label:['Interaction Design','Concept Design'] ,
 		img: Astro_logo,
 		img2: astro_hover,
 		size: '25%',
@@ -55,8 +56,8 @@ const controls = [
 	},
 	{ 
     	title: 'Jasper Financial',
-		description: 'UX Design and Frontend Development Internship.' ,
-		label:['Intership', 'Design System', 'Checkout flow', 'Landing page design'] ,
+		description: 'UX Design and Front-End Development at Jasper Financial.' ,
+		label:['UI/UX Design', 'Front-End Development','Design System'] ,
 		img: Jasper_logo,
 		img2: jasper_hover,
 		size: '5%',
@@ -346,9 +347,9 @@ const Home = (props) => {
 			<h1>Hello! I'm Cori.</h1>
 			{/*<h2 className="oneLiner"><span style={{opacity:"1"}}>A passionate UI/UX Designer with working experience in 
 			 Front-end Development</span> who believes design is a never-ending process.</h2>*/}
-			<h2 className="oneLiner">I believe design is a never-ending process. 
-			From Front-end Developer to Product Designer, 
-			I’m passionate about turning visions into practical solutions. </h2>
+			<h2 className="oneLiner">I'm a developer-turned-product designer with both in-house and agency experience. 
+			I'm a system thinker, problem solver, and facilitator. 
+			I believe design is a never-ending process.  </h2>
 		</div>
 		<div className="mouse">
             <div className="scroll"></div>

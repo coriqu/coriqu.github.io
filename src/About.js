@@ -1,6 +1,6 @@
 import React from 'react';
 import Me from './assets/img/about/me0.jpg';
-import Resume from './assets/resume/coriqu-resume.pdf';
+import Resume from './assets/resume/CoriQu_ProductDesigner_Resume.pdf';
 import styled from 'styled-components';
 const OutcomeOverview = styled.div`
 	width: 100%;
@@ -157,7 +157,7 @@ class About extends React.Component{
 					              },
 					              { 
 					                  title: "UI/UX Designer & Front-End Developer",
-					                  company: "Jasper Financial - New York, NY (Remote)",
+					                  company: "Jasper Financial - New York, NY",
 					                  description: '',
 					                  time: "Feb 2021 – Jun 2021"
 					              },

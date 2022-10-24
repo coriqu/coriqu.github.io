@@ -72,10 +72,18 @@ const ProjectSection = (props) => {
 	<div className="project-box col-xl-6 col-md-6 col-xs-12 col-12">
 		{/*<H2>0{props.index+1}</H2>*/}
 		<h3>{props.title}</h3>
+
 	</div>
 
 	<div className="project-box col-xl-6 col-md-6 col-xs-12 col-12">
 		<p>{props.description}</p>
+		<div className="pf-tag">
+			{
+				props.label.map((tag,i )=> (
+					<span key={i} className="tag">{tag}</span>
+				))
+			}
+		</div>
 	</div>
 	<ProjectContainer className="col-xl-12 col-md-12 col-xs-12 col-12" style={{backgroundColor: props.backgroundColor}}>
 

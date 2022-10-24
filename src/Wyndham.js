@@ -3,21 +3,9 @@ import ScrollToTopBtn from './components/Button/ScrollToTopBtn.js';
 import styled, { css } from 'styled-components';
 // import Home from './Jasper/landing-page-demo.js';
 import { HashRouter as Router, Route, Link } from "react-router-dom";
-import MyCube from "./components/Cube/cube.js";
-import View01 from './assets/img/astrobuddy/video/AB-view.gif';
-import View02 from './assets/img/astrobuddy/video/Following-view.gif';
-import View03 from './assets/img/astrobuddy/video/Omniscient-view.gif';
-import Module from './assets/img/astrobuddy/video/Astrobuddy.gif';
-import Module2D from './assets/img/astrobuddy/video/2D-view.gif';
-import Task from './assets/img/astrobuddy/video/Astrobuddy.gif';
-import ManageTask from './assets/img/astrobuddy/video/ManageTask.gif';
-import CreateTask from './assets/img/astrobuddy/video/CreateTask.gif';
-import PositionControl from './assets/img/astrobuddy/video/PositionControl.gif';
+import Placeholder from './assets/img/wyndham/Placeholder.png';
+import video from './assets/img/wyndham/interaction.mp4';
 
-import Point from './assets/img/astrobuddy/video/point.gif';
-import Line from './assets/img/astrobuddy/video/line.gif';
-import S2d from './assets/img/astrobuddy/video/2d.gif';
-import S3d from './assets/img/astrobuddy/video/3d.gif';
 // const Div = styled.div`
 //   	--color-header: #191919 !important; 
 //     --color-text: #323232 !important;
@@ -104,11 +92,21 @@ const OutcomeOverview = styled.div`
     	position: absolute;
 		height: 100%;
 	}
+	.image video {
+    	position: absolute;
+		height: 100%;
+	}
 	.image img.widthfixed {
-		width: 90%;
+		width: 100%;
 		height: auto;
-		border: 24px solid #111;
-		border-radius: 8px;
+		border: 8px solid #111;
+		border-radius: 4px;
+	}
+	.image video.widthfixed {
+		width: 100%;
+		height: auto;
+		border: 8px solid #111;
+		border-radius: 4px;
 	}
 	h4 {
 		margin: 0;
@@ -170,7 +168,7 @@ function importAll(r) {
   return images;
 }
 
-const images = importAll(require.context('./assets/img/astrobuddy/', false, /\.(png|jpe?g|svg)$/));
+const images = importAll(require.context('./assets/img/wyndham/', false, /\.(png|jpe?g|svg)$/));
 
 const Wyndham = (props) => {
 	useEffect(()=>{
@@ -212,9 +210,9 @@ const Wyndham = (props) => {
 		<div className="flex nasa" style={{position: "relative", top: "80px"}}>
 			<portfolio-intro className="flex">
 				
-				{/*<div className="hero-img-box">
-					<img src={images['cover02.png'].default} style={{backgroundColor: '#222', height:"100%", width:"auto"}} alt="" />
-				</div>*/}
+				<div className="hero-img-box">
+					<img src={images['hero.png'].default} style={{backgroundColor: '#222', height:"auto", width:"100%"}} alt="" />
+				</div>
 				
 			</portfolio-intro>
 
@@ -225,7 +223,7 @@ const Wyndham = (props) => {
 						<div className="col-xl-3 col-md-3 col-xs-6 col-6">
 							<h4>My Role</h4>
 							<ul>
-								<li>Product Designer, Design System</li>
+								<li>Product Designer</li>
 								<li>Front-End Developer</li>
 							</ul>
 						</div>
@@ -255,23 +253,312 @@ const Wyndham = (props) => {
 						</div>
 					</div>	
 				</div>
-				<div className="section-box">
-					<h3 className="section-title">Coming soon</h3>
-				</div>
-				{/*<div className="section-box">
-					<h3 className="section-title">Overview</h3>
-					<p>Astro Buddy is a robot designed for the next generation for <strong>NASA's Astrobee Robot</strong>. 
-					It aims to help improve and hasten human space exploration missions to new destinations by <strong>taking routine, highly repetitive, dangerous, or long-duration tasks out of human hands.</strong></p>
-				</div>
-				<div className="section-box">
-					<h3 className="section-title">The challenge</h3>
-					<p>There's <strong>no gravity</strong> so everything is floating in space, 
-					both the astronauts in space and the operator on the earth can't have a <strong>direct view</strong> of the robot. 
-					So the challenge for me will be how to design the interfaces 
-					that can handle all the <strong>interactions</strong> between people and the Astro Buddy.</p>
-				</div>*/}
 				
+				<div className="section-box">
+					<h3 className="section-title">Overview</h3>
+					<p>My team has been using Sketch and Abstract as the primary design tools. 
+					We have noticed challenges with our design process. We decided to migrate from Sketch to Figma. 
+					To enable a trustfulness of collaboration, creating and maintaining guidelines and libraries of the Design System are essential. </p>
+				</div>
+				<div className="section-box">
+					<h3 className="section-title">My Role</h3>
+					<p>I led multi-brand design systems migration from Sketch to Figma as a design system thinker, advocate, and maintainer. 
+					I managed and refined the design system’s foundations, components, and patterns in Figma. 
+					As I also working on maintaining and updating the design system on the front-end side, I aim to bridge the gaps between design and development.</p>
+				</div>
+				<div className="section-box">
+					<h3 className="section-title">The Users</h3>
+					<p>The target audiences are the designers and developers at our company who use the Design System.</p>
+				</div>
+				
+				
+				<div className="section-box">
+					<h3 className="section-title">The Approach</h3>
+					<p>I started the redesign process by conducting an audit of the current design system and design files in Abstract and Sketch. I gathered the thoughts from the designers on UX Team and the developers who implement the design.</p>
+					<p>At the same time, I started to build the styles that design tokens in Figma. Playing around with the components and transferring design files from Sketch to Figma. Then I start to notice the challenges we are facing.</p>
+				</div>
+
+{/*----------------------------------- The Challenge -----------------------------------*/}				
+				<div className="section-box">
+					<h3>The Challenge</h3>
+					<p></p>
+			
+
+					<h4>Migration from Sketch to Figma</h4>
+					<div className="grid">
+					{
+		              [{ 
+		                  title: "",
+		                  icon: images['styles.png'].default,
+		                  description: "Switching from Sketch to Figma, styles can't be brought over"
+		              },
+		              { 
+		                  title: "",
+		                  icon: images['organization.png'].default,
+		                  description: "Restructuring team, project, and file organization"
+		              },
+		              { 
+		                  title: "",
+		                  icon: '',
+		                  description: ''
+		              }
+		            ].map((item,i) => (
+		              <DesignGoal key = {i} className="col-xl-4 col-md-4 col-xs-4 col-6">
+		                	<img src={item.icon} alt="" />
+							<h3>{item.title}</h3>
+							<p>{item.description}</p>
+		              </DesignGoal>
+		            ))}
+					</div>
+
+
+					<h4>Building design system</h4>
+					<div className="grid">
+					{
+		              [{ 
+		                  title: "",
+		                  icon: images['auto.png'].default,
+		                  description: 'Add auto-layout and convert components to variants. '
+		              },
+		              { 
+		                  title: "",
+		                  icon: images['naming.png'].default,
+		                  description: 'Keep consistency in naming variants, properties, and values.'
+		              },
+		              { 
+		                  title: "",
+		                  icon: images['create.png'].default,
+		                  description: 'Create documents and guidelines from 0 to 1.'
+		              }
+		            ].map((item,i) => (
+		              <DesignGoal key = {i} className="col-xl-4 col-md-4 col-xs-4 col-6">
+		              		<img src={item.icon} alt="" />
+		                	<h3>{item.title}</h3>
+							<p>{item.description}</p>
+		              </DesignGoal>
+		            ))}
+					</div>
+				</div>
+
+
+
+
+			
+				{/*<div className="section-box">
+					<h3 className="section-title">The Solution</h3>
+					<p>I started the redesign process by conducting an audit of the current design system and design files in Abstract and Sketch. I gathered the thoughts from the designers on UX Team and the developers who implement the design.</p>
+					<p>At the same time, I started to build the styles that design tokens in Figma. Playing around with the components and transferring design files from Sketch to Figma. Then I start to notice the challenges we are facing.</p>
+				</div>*/}
+
+
 			</div>
+{/*----------------------------------- The Solution -----------------------------------*/}	
+
+			<div className="section-box fullscreen-container flex flex-center">
+				<div className="flex-width-70">
+					<div className="section-box">
+						<H2>The Solution & Process</H2>
+						<h3>Migration from Sketch to Figma.</h3>
+					</div>
+				</div>
+				<div className="col-1">
+				</div>
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['plan.png'].default} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>A plan for migration</h1>
+						<p>I created a project checklist with all the brands and design files that our team wants to transfer to Figma.</p>
+					</div>
+				</OutcomeOverview>
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Restructure organization and naming conventions</h1>
+						<p></p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['restructure.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
+
+
+
+
+
+
+				<div className="flex-width-70">
+					<div className="section-box">
+						<h3>Building design system</h3>
+					</div>
+				</div>
+		
+				{/*<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={Placeholder} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Single source of truth</h1>
+						<p>Upload custom fonts to team organization so everyone is using the same fonts with the same naming conventions</p>
+					</div>
+				</OutcomeOverview>*/}
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Start with the Foundations</h1>
+						<p></p>
+						{/*
+							<p>Own a color system</p>
+							<p>Rules and source of color picking</p>
+							<p>Sync Figma properties with code properties</p>
+						*/}
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['design-token.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-1"></div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['component.png'].default} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Thinking in Components</h1>
+						<p>I Align my front-end knowledge with the design when building components, I always make sure to start from the smallest pieces, and ideally one component only does one thing. If it ends up growing, it should be decomposed into smaller subcomponents.</p>
+					</div>
+
+				</OutcomeOverview>
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Built-in variant interactions</h1>
+						<p></p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<video controls className="widthfixed" loop="" muted="" playsinline="" autoplay="" poster={images['interaction.png'].default} style={{height:"auto", width:"100%"}} >
+						<source src={video} type="video/mp4" />
+						</video>
+					</div>
+				</OutcomeOverview>
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Dedication to details</h1>
+						<p></p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['improvement.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-1"></div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['document.png'].default} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Documentation</h1>
+						<p>Document files display all the variants and properties of each of the components. Designers and developers can have a clear view of how the components work.</p>
+					</div>
+
+				</OutcomeOverview>
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Power of plugins</h1>
+						<p>"Don't Work Hard, Work Smart."</p>
+						<p>Pick the right plugins can help increase working efficiency. Here are some plugins I use often at work.</p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['plugin.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
+
+				{/*<OutcomeOverview className="grid">
+					<div className="col-1"></div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={Placeholder} alt="" />
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Design System Guidelines</h1>
+					</div>
+				</OutcomeOverview>*/}
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Developer Handoff</h1>
+						<p>For developer handoff, I always create a page in the file named "For development" to guide them to the right place. For the design system update, I locked all the main components and gathered all the instances into the document. So developers can have an overview of the variants and easily inspect the code by looking into the instances.</p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['handoff.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-2">
+					</div>
+					<div className="description col-xl-8 col-md-8 col-xs-12 col-12">
+						<h2 className="section-title">To Be Continued...</h2>
+						<p>I'm still building this page. For more details of my work, please contact <a href="mailto:coriqco@gmail.com">coriqco@gmail.com</a></p>
+					</div>
+					<div className="col-2">
+					</div>
+				</OutcomeOverview>
+
+
+			</div>
+
+
+
+			{/*<div className="flex-width-60">
+				<div className="section-box">
+					<h2 className="section-title">Outcome</h2>
+				</div>
+			</div>
+
+
+			<div className="flex-width-60">
+				<div className="section-box">
+					<h2 className="section-title">Take Away</h2>
+					<p></p>
+				</div>
+			</div>*/}
+
+			
+
+			
+
+
+
+
+
+
 
 			
 			

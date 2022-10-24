@@ -37,7 +37,7 @@ const Footer = () => {
             </a>
           
 	    </address>
-        <p>Designed & Coded by Cori. &#169; 2021</p>
+        <p>Designed & Coded by Cori. &#169; 2022</p>
     </div>
 )}
 export default Footer;
