@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.820a12d9.chunk.css",
-    "main.js": "/static/js/main.4714150c.chunk.js",
-    "main.js.map": "/static/js/main.4714150c.chunk.js.map",
+    "main.js": "/static/js/main.b1fc9232.chunk.js",
+    "main.js.map": "/static/js/main.b1fc9232.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.05af16fc.js",
     "runtime-main.js.map": "/static/js/runtime-main.05af16fc.js.map",
     "static/css/2.df3cb2eb.chunk.css": "/static/css/2.df3cb2eb.chunk.css",
@@ -73,7 +73,7 @@
     "static/media/Bcard0.png": "/static/media/Bcard0.34b764a9.png",
     "static/media/Brainstorm.png": "/static/media/Brainstorm.592cc3e8.png",
     "static/media/Circle.svg": "/static/media/Circle.2776e0ab.svg",
-    "static/media/CoriQu_ProductDesigner_Resume.dd2eeec8.pdf": "/static/media/CoriQu_ProductDesigner_Resume.dd2eeec8.pdf",
+    "static/media/CoriQu_ProductDesigner_Resume.942c27f4.pdf": "/static/media/CoriQu_ProductDesigner_Resume.942c27f4.pdf",
     "static/media/CreateTask.79464731.gif": "/static/media/CreateTask.79464731.gif",
     "static/media/DesignSystem.png": "/static/media/DesignSystem.fc4a8669.png",
     "static/media/DeviceTabletCamera.svg": "/static/media/DeviceTabletCamera.e5d0b0f1.svg",
@@ -293,6 +293,6 @@
     "static/css/2.df3cb2eb.chunk.css",
     "static/js/2.a4f45545.chunk.js",
     "static/css/main.820a12d9.chunk.css",
-    "static/js/main.4714150c.chunk.js"
+    "static/js/main.b1fc9232.chunk.js"
   ]
 }
