@@ -6,6 +6,7 @@ import styles from './ProjectSection.css'
 import styled from 'styled-components';
 const ProjectContainer = styled.div`
 	position: relative;
+	min-height: calc(80vw*0.6);
 	height: 100%;
 	padding: 0;
 	margin: 0;

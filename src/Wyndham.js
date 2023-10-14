@@ -6,6 +6,8 @@ import { HashRouter as Router, Route, Link } from "react-router-dom";
 import Placeholder from './assets/img/wyndham/Placeholder.png';
 import video from './assets/img/wyndham/interaction.mp4';
 
+import UncontrolledExample from './components/Carousel/carousel.js'; 
+
 // const Div = styled.div`
 //   	--color-header: #191919 !important; 
 //     --color-text: #323232 !important;
@@ -29,11 +31,12 @@ const H2 = styled.h4`
 	font-weight: 800;
     font-size: 4em;
     color: #fff;
-    margin-top: 80px;
+    // margin-top: 80px;
+    line-height: 100%;
     margin-bottom: 0;
     @media (max-width: 992px) {
 	    font-size: 5em;
-	    margin: 0 0 -50px 0;
+	    
 	}
 `;
 const OutcomeOverview = styled.div`
@@ -170,6 +173,17 @@ function importAll(r) {
 
 const images = importAll(require.context('./assets/img/wyndham/', false, /\.(png|jpe?g|svg)$/));
 
+
+const controls = [
+		{ 
+	    	src: images['token-1.png'].default,
+	    	class: ''
+		},
+		{ 
+	    	src: images['token-2.png'].default,
+	    	class: ''
+		}
+];
 const Wyndham = (props) => {
 	useEffect(()=>{
 		const faders = document.querySelectorAll(".section-box");
@@ -264,20 +278,21 @@ const Wyndham = (props) => {
 					<h3 className="section-title">My Role</h3>
 					<p>I led multi-brand design systems migration from Sketch to Figma as a design system thinker, advocate, and maintainer. 
 					I managed and refined the design system’s foundations, components, and patterns in Figma. 
-					As I also working on maintaining and updating the design system on the front-end side, I aim to bridge the gaps between design and development.</p>
+					As I also working on maintaining and updating the design system on the front-end side, I aim to bridge the gaps between design and development. 
+					The target audiences are the designers and developers at our company who use the Design System.</p>
 				</div>
-				<div className="section-box">
+				{/*<div className="section-box">
 					<h3 className="section-title">The Users</h3>
 					<p>The target audiences are the designers and developers at our company who use the Design System.</p>
-				</div>
+				</div>*/}
 				
 				
-				<div className="section-box">
+				{/*<div className="section-box">
 					<h3 className="section-title">The Approach</h3>
 					<p>I started the redesign process by conducting an audit of the current design system and design files in Abstract and Sketch. I gathered the thoughts from the designers on UX Team and the developers who implement the design.</p>
 					<p>At the same time, I started to build the styles that design tokens in Figma. Playing around with the components and transferring design files from Sketch to Figma. Then I start to notice the challenges we are facing.</p>
 				</div>
-
+*/}
 {/*----------------------------------- The Challenge -----------------------------------*/}				
 				<div className="section-box">
 					<h3>The Challenge</h3>
@@ -355,9 +370,9 @@ const Wyndham = (props) => {
 {/*----------------------------------- The Solution -----------------------------------*/}	
 
 			<div className="section-box fullscreen-container flex flex-center">
-				<div className="flex-width-70">
+				<div className="flex-width-80">
 					<div className="section-box">
-						<H2>The Solution & Process</H2>
+						<H2>The Solution</H2>
 						<h3>Migration from Sketch to Figma.</h3>
 					</div>
 				</div>
@@ -366,24 +381,24 @@ const Wyndham = (props) => {
 				<OutcomeOverview className="grid">
 					<div className="col-1">
 					</div>
-					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
-						<img className="widthfixed" src={images['plan.png'].default} alt="" />
-					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>A plan for migration</h1>
 						<p>I created a project checklist with all the brands and design files that our team wants to transfer to Figma.</p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['plan.png'].default} alt="" />
 					</div>
 				</OutcomeOverview>
 
 				<OutcomeOverview className="grid">
 					<div className="col-1">
 					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['restructure.png'].default} alt="" />
+					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Restructure organization and naming conventions</h1>
 						<p></p>
-					</div>
-					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
-						<img className="widthfixed" src={images['restructure.png'].default} alt="" />
 					</div>
 				</OutcomeOverview>
 
@@ -393,11 +408,13 @@ const Wyndham = (props) => {
 
 
 
-				<div className="flex-width-70">
+				<div className="flex-width-80">
 					<div className="section-box">
+						<H2>The Building Process</H2>
 						<h3>Building design system</h3>
 					</div>
 				</div>
+
 		
 				{/*<OutcomeOverview className="grid">
 					<div className="col-1">
@@ -416,7 +433,7 @@ const Wyndham = (props) => {
 					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Start with the Foundations</h1>
-						<p></p>
+						<p>I started to build the styles that design tokens in Figma. Add a color system to the library, creating rules and a source of color picking, and syncing Figma properties with code properties.</p>
 						{/*
 							<p>Own a color system</p>
 							<p>Rules and source of color picking</p>
@@ -428,6 +445,16 @@ const Wyndham = (props) => {
 					</div>
 				</OutcomeOverview>
 
+				<OutcomeOverview className="grid">
+					<div className="col-1"></div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Bring in alias tokens</h1>
+						<p>Alias tokens are semantic tokens that come from base tokens. They indicate the functionality of this token and are created based on the components. After bringing in alias tokens, we can just make changes in the foundation library instead of clicking through the component itself and selecting the specific part of the component to assign a new color. When making changes to the alias tokens in the foundation library, the components linked to those tokens will update automatically.</p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<UncontrolledExample controls={controls} />
+					</div>
+				</OutcomeOverview>
 
 				<OutcomeOverview className="grid">
 					<div className="col-1"></div>
@@ -436,7 +463,7 @@ const Wyndham = (props) => {
 					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
 						<h1>Thinking in Components</h1>
-						<p>I Align my front-end knowledge with the design when building components, I always make sure to start from the smallest pieces, and ideally one component only does one thing. If it ends up growing, it should be decomposed into smaller subcomponents.</p>
+						<p>I align my front-end knowledge with the design when building components, I always make sure to start from the smallest pieces, and ideally one component only does one thing. If it ends up growing, it should be decomposed into smaller subcomponents.</p>
 					</div>
 
 				</OutcomeOverview>
@@ -459,14 +486,30 @@ const Wyndham = (props) => {
 				<OutcomeOverview className="grid">
 					<div className="col-1">
 					</div>
-					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
-						<h1>Dedication to details</h1>
-						<p></p>
-					</div>
-					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
 						<img className="widthfixed" src={images['improvement.png'].default} alt="" />
 					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Dedication to details</h1>
+						<p>I take the time to assign relevant names to design tokens and component layers, which reduces the communication cost and makes collaborate effectively between designers and developers.</p>
+					</div>
+				
 				</OutcomeOverview>
+
+
+
+				<OutcomeOverview className="grid">
+					<div className="col-1">
+					</div>
+					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
+						<h1>Component-based templates</h1>
+						<p>Component-based templates provide designers with an easy and flexible way to start their designs.</p>
+					</div>
+					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
+						<img className="widthfixed" src={images['template.png'].default} alt="" />
+					</div>
+				</OutcomeOverview>
+
 
 
 				<OutcomeOverview className="grid">
@@ -495,15 +538,15 @@ const Wyndham = (props) => {
 				</OutcomeOverview>
 
 
-				{/*<OutcomeOverview className="grid">
+				<OutcomeOverview className="grid">
 					<div className="col-1"></div>
 					<div className="image col-xl-7 col-md-7 col-xs-12 col-12">
-						<img className="widthfixed" src={Placeholder} alt="" />
+						<img className="widthfixed" src={images['guidance.png'].default} alt="" />
 					</div>
 					<div className="description col-xl-3 col-md-3 col-xs-12 col-12">
-						<h1>Design System Guidelines</h1>
+						<h1>Design System Guidance</h1>
 					</div>
-				</OutcomeOverview>*/}
+				</OutcomeOverview>
 
 
 				<OutcomeOverview className="grid">
@@ -519,7 +562,7 @@ const Wyndham = (props) => {
 				</OutcomeOverview>
 
 
-
+{/*
 				<OutcomeOverview className="grid">
 					<div className="col-2">
 					</div>
@@ -529,7 +572,7 @@ const Wyndham = (props) => {
 					</div>
 					<div className="col-2">
 					</div>
-				</OutcomeOverview>
+				</OutcomeOverview>*/}
 
 
 			</div>
