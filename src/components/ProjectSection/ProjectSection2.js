@@ -91,8 +91,8 @@ const ProjectSection = (props) => {
 		
 		<Link to={props.link}>
 			<ImgContainer className="pf-box">
-				<img className="col-12" style={{width: props.size}} src={props.img} alt="" />
-				<img className="col-12" style={{height: '100%', width: 'auto'}} src={props.img2} alt="" />
+				<img className="col-12" style={{height: '100%', width: 'auto'}} src={props.img} alt="" />
+				<img className="col-12" style={{width: props.size}} src={props.img2} alt="" />
 			</ImgContainer>
 		</Link>
 		{/*<ImgDescription className="pf-intro flex-justify-between">

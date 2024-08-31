@@ -4,10 +4,17 @@ import airterra from './assets/img/sides/airterra.png';
 import email from './assets/img/sides/email.png';
 import aspecta from './assets/img/sides/aspecta.png';
 import motion from './assets/img/sides/motion.png';
+import IgniX from './assets/img/sides/IgniX.png';
 import video from './assets/img/spirit/display.mp4';
 const Side = (props) => {
 	const controls = [
-		
+
+		{ 
+	    	title: 'IgniX',
+			category: 'Branding | Pitch Deck Design',
+			description: '',
+			img: IgniX,
+		},
 	    { 
 	    	title: 'Email Design & Development (2022)',
 			category: '',

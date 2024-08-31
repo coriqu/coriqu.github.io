@@ -853,8 +853,8 @@ strong {
 
 
 .about-intro {
-    min-height: 100vh;
-    margin-top: -80px;
+    min-height: 90vh;
+    margin-top: 0;
     /*margin: 3rem 0;*/
     /*padding-top: 150px;*/
 }
