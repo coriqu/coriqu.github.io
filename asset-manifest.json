@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.343ed524.css",
-    "main.js": "/static/js/main.941a6aef.js",
+    "main.js": "/static/js/main.38a2750d.js",
     "static/js/422.1014264f.chunk.js": "/static/js/422.1014264f.chunk.js",
     "static/media/plugin.gif": "/static/media/plugin.659a437fd118839ce583.gif",
     "static/media/AB-view.gif": "/static/media/AB-view.7ff644bb9c9a47c9a88e.gif",
@@ -71,7 +71,6 @@
     "static/media/3d.gif": "/static/media/3d.1b058b4eafc72f1c9941.gif",
     "static/media/03.jpg": "/static/media/03.262ba1a1d1e8c270df1e.jpg",
     "static/media/handoff.png": "/static/media/handoff.fcaf0112512cef960c51.png",
-    "static/media/CoriQu_ProductDesigner_Resume.pdf": "/static/media/CoriQu_ProductDesigner_Resume.95c72d2a13f243f1f853.pdf",
     "static/media/high3.png": "/static/media/high3.424f6c809e1e09e6083d.png",
     "static/media/07.jpg": "/static/media/07.5ea58338c5294258210f.jpg",
     "static/media/06.jpg": "/static/media/06.8ed08e2f091cface4472.jpg",
@@ -274,6 +273,7 @@
     "static/media/DeviceTabletCamera.svg": "/static/media/DeviceTabletCamera.e5d0b0f1ed95ade0d2b2.svg",
     "static/media/Trustworthy.svg": "/static/media/Trustworthy.d4a85936e116faff9e59.svg",
     "static/media/9.svg": "/static/media/9.d4ccb359e8a88bbdd3b2.svg",
+    "index.html": "/index.html",
     "static/media/logo-lw.svg": "/static/media/logo-lw.4615c11603221fc47b39bcbeee5019ac.svg",
     "static/media/logo-l.svg": "/static/media/logo-l.316163df0a8e832c8c6436a3416362e4.svg",
     "static/media/insight2.svg": "/static/media/insight2.25161791908a9f9ba63a.svg",
@@ -282,7 +282,6 @@
     "static/media/insight1.svg": "/static/media/insight1.4e4b2a44635a71b251b2.svg",
     "static/media/Simple.svg": "/static/media/Simple.6b197841b6cacd0e7796.svg",
     "static/media/7.svg": "/static/media/7.8e5e87b75dff715a9aeb.svg",
-    "index.html": "/index.html",
     "static/media/linkedin.svg": "/static/media/linkedin.03f1d164221e3a81954e.svg",
     "static/media/Hierarchy.svg": "/static/media/Hierarchy.166130c9f25bd3f98bcc.svg",
     "static/media/Less.svg": "/static/media/Less.bdd1839a135fdc544e1a.svg",
@@ -294,11 +293,11 @@
     "static/media/gmail.svg": "/static/media/gmail.ab6acc4de861d7cfe8e4.svg",
     "static/media/Onetime.svg": "/static/media/Onetime.9c3df95bd655cf6f9669.svg",
     "main.343ed524.css.map": "/static/css/main.343ed524.css.map",
-    "main.941a6aef.js.map": "/static/js/main.941a6aef.js.map",
+    "main.38a2750d.js.map": "/static/js/main.38a2750d.js.map",
     "422.1014264f.chunk.js.map": "/static/js/422.1014264f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.343ed524.css",
-    "static/js/main.941a6aef.js"
+    "static/js/main.38a2750d.js"
   ]
 }
