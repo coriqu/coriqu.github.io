@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.72452d07.css",
-    "main.js": "/static/js/main.89096006.js",
+    "main.js": "/static/js/main.69023b59.js",
     "static/js/422.1014264f.chunk.js": "/static/js/422.1014264f.chunk.js",
     "static/media/plugin.gif": "/static/media/plugin.659a437fd118839ce583.gif",
     "static/media/AB-view.gif": "/static/media/AB-view.7ff644bb9c9a47c9a88e.gif",
@@ -20,7 +20,7 @@
     "static/media/visual_design.svg": "/static/media/visual_design.23e191f223e0c37c0cd4.svg",
     "static/media/visual_design.png": "/static/media/visual_design.9fac3247ffb5c81c9539.png",
     "static/media/hero111.png": "/static/media/hero111.e961b2b2f168467d0724.png",
-    "static/media/workshop.png": "/static/media/workshop.7bb6183eca1ac2164885.png",
+    "static/media/workshop.png": "/static/media/workshop.38c139eb2f0c80ec6f52.png",
     "static/media/2D-view.gif": "/static/media/2D-view.ef6fce48a682b18dcfe9.gif",
     "static/media/drinkingbuddy.png": "/static/media/drinkingbuddy.f46c3885b2964ce8caca.png",
     "static/media/Qu_c_walkthrough_2.mp4": "/static/media/Qu_c_walkthrough_2.e1a570ea4fc1fbd07023.mp4",
@@ -49,6 +49,7 @@
     "static/media/2D.png": "/static/media/2D.8c47beecb85cedf94bca.png",
     "static/media/testing.svg": "/static/media/testing.65525951f58fac8aec6b.svg",
     "static/media/template.png": "/static/media/template.df3fa3e30c356a767c8a.png",
+    "static/media/IgniX.png": "/static/media/IgniX.6aa537815fda8eff04b3.png",
     "static/media/Brainstorm.png": "/static/media/Brainstorm.592cc3e83df8958f2ed0.png",
     "static/media/landing0.png": "/static/media/landing0.5814de901ffef2516f51.png",
     "static/media/high1.png": "/static/media/high1.bf4f9e075459a9b283c8.png",
@@ -89,7 +90,6 @@
     "static/media/21.jpg": "/static/media/21.ba615232c99f19837572.jpg",
     "static/media/landingpage.png": "/static/media/landingpage.c92b05af42d2935b8215.png",
     "static/media/documentation2.png": "/static/media/documentation2.5296e3859608992b8510.png",
-    "static/media/IgniX.png": "/static/media/IgniX.33d20232b0d86a151a9d.png",
     "static/media/high6.png": "/static/media/high6.37bf6ea8415a6578a75c.png",
     "static/media/motion5.png": "/static/media/motion5.e2f4261f3d05d9c4b7da.png",
     "static/media/documentation.png": "/static/media/documentation.91ad0950ca8a0e8f397a.png",
@@ -311,11 +311,11 @@
     "static/media/gmail.svg": "/static/media/gmail.ab6acc4de861d7cfe8e4.svg",
     "static/media/Onetime.svg": "/static/media/Onetime.9c3df95bd655cf6f9669.svg",
     "main.72452d07.css.map": "/static/css/main.72452d07.css.map",
-    "main.89096006.js.map": "/static/js/main.89096006.js.map",
+    "main.69023b59.js.map": "/static/js/main.69023b59.js.map",
     "422.1014264f.chunk.js.map": "/static/js/422.1014264f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72452d07.css",
-    "static/js/main.89096006.js"
+    "static/js/main.69023b59.js"
   ]
 }
