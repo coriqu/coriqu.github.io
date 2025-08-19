@@ -1,20 +1,23 @@
 {
   "files": {
     "main.css": "/static/css/main.72452d07.css",
-    "main.js": "/static/js/main.69023b59.js",
+    "main.js": "/static/js/main.3b6a7626.js",
     "static/js/422.1014264f.chunk.js": "/static/js/422.1014264f.chunk.js",
     "static/media/plugin.gif": "/static/media/plugin.659a437fd118839ce583.gif",
     "static/media/AB-view.gif": "/static/media/AB-view.7ff644bb9c9a47c9a88e.gif",
     "static/media/Following-view.gif": "/static/media/Following-view.f8d81426eb217ececae5.gif",
     "static/media/tokenupdate.gif": "/static/media/tokenupdate.21c6aca28626d9a30b1e.gif",
     "static/media/CreateTask.gif": "/static/media/CreateTask.79464731aa140d8290e0.gif",
-    "static/media/Omniscient-view.gif": "/static/media/Omniscient-view.6e9e3d37b632464a4701.gif",
     "static/media/tokenplugin.gif": "/static/media/tokenplugin.5d12a5c1db1f7d711322.gif",
+    "static/media/Omniscient-view.gif": "/static/media/Omniscient-view.6e9e3d37b632464a4701.gif",
     "static/media/PositionControl.gif": "/static/media/PositionControl.d02c164ab6f0a3231e02.gif",
     "static/media/Astrobuddy.gif": "/static/media/Astrobuddy.6fbf7b2a5366c87832ee.gif",
+    "static/media/FG04.png": "/static/media/FG04.6056e90abc7e35f47db7.png",
+    "static/media/FG01.png": "/static/media/FG01.9bd20c761f7119da5d2c.png",
     "static/media/competitors.png": "/static/media/competitors.9c3a1a6611bd68e929bc.png",
     "static/media/display.mp4": "/static/media/display.06bdf8f6c52e1a208d92.mp4",
     "static/media/05.jpg": "/static/media/05.a3b73d997072fdbbc601.jpg",
+    "static/media/FG02.png": "/static/media/FG02.fbd8419468088ebbe96e.png",
     "static/media/hero_large.png": "/static/media/hero_large.c24b1af5d8155f1377b6.png",
     "static/media/ManageTask.gif": "/static/media/ManageTask.b417934d8042469c571b.gif",
     "static/media/visual_design.svg": "/static/media/visual_design.23e191f223e0c37c0cd4.svg",
@@ -25,6 +28,7 @@
     "static/media/drinkingbuddy.png": "/static/media/drinkingbuddy.f46c3885b2964ce8caca.png",
     "static/media/Qu_c_walkthrough_2.mp4": "/static/media/Qu_c_walkthrough_2.e1a570ea4fc1fbd07023.mp4",
     "static/media/View03.png": "/static/media/View03.9ecf4f74d43e11e5ce0b.png",
+    "static/media/FG03.png": "/static/media/FG03.7f67c57d215876c2ea7c.png",
     "static/media/visual_design2.png": "/static/media/visual_design2.9cdf1de353c0ad1507e6.png",
     "static/media/Qu_c_walkthrough_3.mp4": "/static/media/Qu_c_walkthrough_3.b936c3e943f364ab5527.mp4",
     "static/media/hero1.png": "/static/media/hero1.2e3ce1699a5abf0b9146.png",
@@ -311,11 +315,11 @@
     "static/media/gmail.svg": "/static/media/gmail.ab6acc4de861d7cfe8e4.svg",
     "static/media/Onetime.svg": "/static/media/Onetime.9c3df95bd655cf6f9669.svg",
     "main.72452d07.css.map": "/static/css/main.72452d07.css.map",
-    "main.69023b59.js.map": "/static/js/main.69023b59.js.map",
+    "main.3b6a7626.js.map": "/static/js/main.3b6a7626.js.map",
     "422.1014264f.chunk.js.map": "/static/js/422.1014264f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.72452d07.css",
-    "static/js/main.69023b59.js"
+    "static/js/main.3b6a7626.js"
   ]
 }
